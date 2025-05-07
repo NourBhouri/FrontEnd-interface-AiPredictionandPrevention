@@ -4,8 +4,13 @@ import logo from "../assets/logo-Drx.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 
 const SignInPage = () => {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const handleClick_visual = () => {
+    navigate("/NewAccident"); // Navigate to the Prediction page
+  };
   return (
     <div className="signin-container">
       <div className="overlay">
@@ -32,9 +37,9 @@ const SignInPage = () => {
               <a href="#">Forgot password ?</a>
             </div>
             <button
+              onClick={handleClick_visual}
               type="button"
               className="signin-button"
-              Click={() => (window.location.href = "/Visualisation.jsx")}
             >
               SIGN IN
             </button>

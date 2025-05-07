@@ -73,6 +73,8 @@ body, html {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Limit the height to the viewport */
 }
 
 .top-bar {
@@ -151,11 +153,13 @@ body, html {
   padding: 50px; /* Increased padding for more space inside the container */
   display: flex;
   flex-direction: column;
-  gap: 20px ;/*Increased gap between elements */
+  gap: 20px; /* Increased gap between elements */
   min-height: 50px; /* Increased minimum height */
   width: 90%; /* Adjusted width to make the container larger */
   max-width: 1200px; /* Set a maximum width for larger screens */
-  margin: 10px auto; 
+  margin: 10px auto;
+  overflow-y: auto; /* Enable vertical scrolling for the form container */
+  max-height: calc(100vh - 100px); /* Ensure the form container fits within the viewport */
 }
 
 /* Form Grid */

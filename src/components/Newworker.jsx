@@ -1,5 +1,6 @@
 import React from "react";
 import "./NewWorker.css";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartLine,
@@ -27,7 +28,25 @@ export default function NewWorker() {
     "Weight",
     "Accident Shift",
   ];
-
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+  // Initialize the useNavigate hook
+  const handleClick_visual = () => {
+    navigate("/Visualization"); // Navigate to the Prediction page
+  };
+  // Initialize the useNavigate hook
+  const handleClick_worker = () => {
+    navigate("/NewWorker"); // Navigate to the Prediction page
+  };
+  const handleClick_accident = () => {
+    navigate("/NewAccident"); // Navigate to the Prediction page
+  };
+  // Initialize the useNavigate hook
+  const handleClick_pred = () => {
+    navigate("/Prediction"); // Navigate to the Prediction page
+  };
+  const handleClick_logOut = () => {
+    navigate("/SignInPage"); // Navigate to the Prediction page
+  };
   const renderOptions = (label) => {
     switch (label) {
       case "Gender":
@@ -445,19 +464,19 @@ export default function NewWorker() {
       <div className="sidebar">
         <h2 className="title">Dashboard</h2>
         <div className="menu">
-          <button className="menu-btn">
+          <button onClick={handleClick_visual} className="menu-btn">
             <FontAwesomeIcon icon={faChartLine} />
             Visualization
           </button>
-          <button className="menu-btn active">
+          <button onClick={handleClick_worker} className="menu-btn active">
             <FontAwesomeIcon icon={faUserPlus} />
             New Employee
           </button>
-          <button className="menu-btn">
+          <button onClick={handleClick_accident} className="menu-btn">
             <FontAwesomeIcon icon={faExclamationTriangle} />
             Add Accident
           </button>
-          <button className="menu-btn">
+          <button onClick={handleClick_logOut} className="menu-btn">
             <FontAwesomeIcon icon={faSignOutAlt} />
             Log Out
           </button>
@@ -498,7 +517,9 @@ export default function NewWorker() {
               </div>
             ))}
           </div>
-          <button className="predict-btn">Predict</button>
+          <button onClick={handleClick_pred} className="predict-btn">
+            Predict
+          </button>
         </div>
       </div>
     </div>

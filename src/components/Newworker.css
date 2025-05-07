@@ -137,18 +137,21 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    min-height: 600px;
+    min-height: 530px;
     width: 90%;
     max-width: 1400px;
-    margin: 150px auto; /* Keeps the form container centered */
+    margin: 10px; /* Keeps the form container centered */
+    overflow-y: auto; /* Enable vertical scrolling for the form container */
+    max-height: calc(100vh - 100px); /* Ensure the form container fits within the viewport */
 }
 
 .title-row {
+    margin: auto; /* Keeps the form container centered */
     display: flex;
     justify-content: flex-start; /* Align titles to the left */
     align-items: center;
     gap: 270px; /* Add a small gap between the titles */
-    margin-bottom: 10px; 
+    /*margin-bottom: 10px; */
 }
 
 .title-row h2 {
@@ -156,7 +159,6 @@ body, html {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    margin: 10px; /* Remove default margin */
 }
 
 .form-grid {

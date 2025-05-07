@@ -1,143 +1,143 @@
 /* Reset + base setup */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html, #root {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Background */
-  .signin-container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../assets/car_.jpg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  /* Center content vertically and align left */
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5vw;
-  }
-  
-  /* Login box styling */
-  .login-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 4rem 3rem; /* Increased padding */
-    border-radius: 25px;
-    width: 100%;
-    max-width: 600px;  /* Was 500px */
-    min-height: 500px; /* Ensure it's taller */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    color: white;
-    text-align: center;
-  } 
-  
-  /* Titles */
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-  }
-  
-  .subtitle {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-  }
-  
-  /* Form layout */
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  
-  /* Input box wrapper for icons */
-  .input-wrapper {
-    position: relative;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
-    border-radius: 10px;
-    border: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 1rem;
-  }
-  
-  .input::placeholder {
-    color: white;
-  }
-  
-  .input-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    pointer-events: none;
-  }
-  
-  /* Forgot password */
-  .forgot-password {
-    text-align: right;
-    font-size: 0.85rem;
-  }
-  
-  .forgot-password a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Sign-in button */
-  .signin-button {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #38bdf8;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1rem;
-  }
-  
-  .signin-button:hover {
-    background-color: #0ea5e9;
-  }
-  
-  /* Brand (bottom right) */
-  .brand {
-    position: absolute;
-    bottom: 5px;    
-    right: 5px; 
-    text-align: right;
-  }
-  
-  .brand-logo {
-    max-width: 400px;
-  } 
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+.signin-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/car_.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Center content vertically and align left */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5vw;
+}
+
+/* Login box styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 4rem 3rem; /* Increased padding */
+  border-radius: 25px;
+  width: 100%;
+  max-width: 600px;  /* Was 500px */
+  min-height: 500px; /* Ensure it's taller */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+} 
+
+/* Titles */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Input box wrapper for icons */
+.input-wrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  pointer-events: none;
+}
+
+/* Forgot password */
+.forgot-password {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.forgot-password a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sign-in button */
+.signin-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #38bdf8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.signin-button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Brand (bottom right) */
+.brand {
+  position: absolute;
+  bottom: 5px;    
+  right: 5px; 
+  text-align: right;
+}
+
+.brand-logo {
+  max-width: 400px;
+} 
+
 
 .brand-text {
-        font-size: 0.8rem;
-        color: white;
-        margin-top: 0.5rem;
-    }   
+      font-size: 0.8rem;
+      color: white;
+      margin-top: 0.5rem;
+  }   
