@@ -50,8 +50,6 @@ export default function Prediction() {
           </div>
         </div>
 
-        <h1 className="visual-title">Prediction</h1>
-
         <div className="prediction-card">
           <h2>Prediction Results</h2>
         </div>

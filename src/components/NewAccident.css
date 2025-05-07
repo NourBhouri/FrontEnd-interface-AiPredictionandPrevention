@@ -48,6 +48,10 @@ body, html {
   font-size: 20px;
   transition: background 0.3s, transform 0.2s;
 }
+.menu-btn.active {
+  background: #00aaff;
+  color: white;
+}
 
 
 .menu-btn:hover {
@@ -144,10 +148,14 @@ body, html {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 15px;
-  padding: 30px;
+  padding: 50px; /* Increased padding for more space inside the container */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px ;/*Increased gap between elements */
+  min-height: 50px; /* Increased minimum height */
+  width: 90%; /* Adjusted width to make the container larger */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: 10px auto; 
 }
 
 /* Form Grid */

@@ -4,18 +4,18 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Arial', sans-serif;
-  }
-  
-  .dashboard {
+}
+
+.dashboard {
     display: flex;
     height: 100vh;
     width: 100vw;
     background-image: url('../assets/car_.jpg');
     background-size: cover;
     background-position: center;
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     width: 250px;
     padding: 20px;
     display: flex;
@@ -23,15 +23,15 @@ body, html {
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.6);
     color: white;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .menu-btn {
+}
+
+.menu-btn {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -44,77 +44,42 @@ body, html {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s ease, transform 0.2s ease;
-    text-decoration: none; /* Ensure links look like buttons */
-  }
-
-  /* Hover effect */
-  .menu-btn:hover {
-    background: #00aaff;
-    transform: translateX(5px); /* Slight movement to the right */
-  }
-
-  /* Active button (e.g., Visualization) */
-  .menu-btn.active {
-    background: #00aaff;
-    color: white;
-  }
-
-  /* Logout button style */
-  .menu-btn.logout {
-    background: #5c5c5c;
-    color: white;
-  }
-
-  .menu-btn.logout:hover {
-    background: #ff4d4d; /* Red hover effect for logout */
-  }
-  
-  /* Add hover effect for navigation options */
-  .menu-btn a {
     text-decoration: none;
-    color: inherit; /* Inherit color from parent */
-  }
-  
-  .menu-btn a:hover {
-    color: #00aaff; /* Change link color on hover */
-  }
-  
-  .number-input ,.date-input {
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 14px;
-    outline: none;
-    backdrop-filter: blur(6px);
-    width: 100%;
-    /*cursor: pointer;*/
-  }
+}
 
-  .logo-img {
+.menu-btn:hover {
+    background: #00aaff;
+    transform: translateX(5px);
+}
+
+.menu-btn.active {
+    background: #00aaff;
+    color: white;
+}
+
+.logo-img {
     width: 120px;
     margin: 20px auto 0;
     display: block;
-  }
-  
-  .main {
+}
+
+.main {
     flex: 1;
     padding: 30px;
     color: white;
     display: flex;
     flex-direction: column;
-  }
-  
-  .top-bar {
+}
+
+.top-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 30px;
     gap: 20px;
-  }
-  
-  .search-container {
+}
+
+.search-container {
     display: flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.08);
@@ -124,127 +89,140 @@ body, html {
     width: 300px;
     gap: 10px;
     margin-right: auto;
-  }
-  
-  .search {
+}
+
+.search {
     background: transparent;
     border: none;
     outline: none;
     color: white;
     font-size: 16px;
     width: 100%;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 20px;
     cursor: pointer;
     color: white;
-  }
-  
-  .user-circle {
+}
+
+.user-circle {
     width: 35px;
     height: 35px;
     background: #ccc;
     border-radius: 50%;
-  }
-  
-  .user-info {
+}
+
+.user-info {
     text-align: left;
     line-height: 1.1;
-  }
-  
-  .user-info span {
+}
+
+.user-info span {
     display: block;
     font-weight: bold;
     font-size: 14px;
-  }
-  
-  .user-info small {
+}
+
+.user-info small {
     font-size: 12px;
     opacity: 0.7;
-  }
-  
-  .visual-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  
-  .form-container {
-    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-    padding: 50px; /* Increased padding */
-    border-radius: 20px;
+    border-radius: 15px;
+    padding: 50px; /* Adjusted padding */
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Increased gap between elements */
-    width: 100%; /* Adjusted width */
-    max-width: 1200px; /* Set a maximum width */
-    margin: 10px; /* Center the form container */
-  }
-  
-  .form-grid {
+    gap: 30px;
+    min-height: 600px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 150px auto; /* Keeps the form container centered */
+}
+
+.title-row {
+    display: flex;
+    justify-content: flex-start; /* Align titles to the left */
+    align-items: center;
+    gap: 270px; /* Add a small gap between the titles */
+    margin-bottom: 10px; 
+}
+
+.title-row h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; /* Remove default margin */
+}
+
+.form-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-  
-  .dropdown-group {
+}
+
+.dropdown-group {
     display: flex;
     flex-direction: column;
     color: white;
     position: relative;
-  }
-  
-  .dropdown-group label {
-    margin-bottom: 10px;
-    font-size: 18px; /* Increased font size */
-    font-family: 'Roboto', sans-serif; /* Changed to a modern font */
-    font-weight: bold; /* Make it bold */
-    color: white; /* Ensure good contrast */
-  }
-  
-  .dropdown-group select {
-    padding: 15px;
-    padding-right: 40px; /* Add space for the dropdown icon */
-    border-radius: 20px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2); /* Dropdown background */
-    color: white; /* Text color */
+}
+
+.dropdown-group label {
+    margin-bottom: 8px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif; /* Match the label font */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown-group select {
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     outline: none;
     backdrop-filter: blur(6px);
     cursor: pointer;
-    appearance: none; /* Remove default browser styling */
-    /*background-image: url('<path fill="white" d="M2 0L0 2h4z"/></svg>');  Custom dropdown arrow */
-    /*background-repeat: no-repeat;*/
-    /* background-position: calc(50% - 10px) center; Position the icon */
-    /*background-size: 8px;  Adjust icon size */
-  }
+    appearance: none;
+}
 
-  .dropdown-group select:focus {
-    background: rgba(255, 255, 255, 0.2); /* Slightly brighter on focus */
+.dropdown-group select:focus {
+    background: rgba(255, 255, 255, 0.2);
     color: white;
-  }
+}
 
-  .dropdown-group select option {
-    background-color: #3d3d3d; /* Option background color */
-    color: white; /* Option text color */
-  }
+.dropdown-group select option {
+    background-color: #3d3d3d;
+    color: white;
+}
 
-  .dropdown-group::after {
-    content: '\25BC'; /* Unicode for a downward arrow */
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: white; /* Match the dropdown text color */
-    pointer-events: none; /* Prevent interaction with the icon */
-  }
-  
-  .predict-btn {
+.dropdown-group::after {
+    content: none;
+}
+
+.number-input,
+.date-input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    backdrop-filter: blur(6px);
+    width: 100%;
+}
+
+.predict-btn {
     align-self: flex-end;
     background-color: #117788;
     color: white;
@@ -254,8 +232,8 @@ body, html {
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .predict-btn:hover {
+}
+
+.predict-btn:hover {
     background-color: #14a2b8;
-  }
+}

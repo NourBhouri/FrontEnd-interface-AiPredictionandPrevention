@@ -55,7 +55,11 @@ body, html {
     background: #00aaff;
     transform: scale(1.03);
   }
-  
+  .menu-btn.active {
+    background: #00aaff;
+    color: white;
+}
+
   /* Sidebar logo */
   .logo-img {
     width: 120px;
@@ -155,15 +159,15 @@ body, html {
     padding: 70px;
     color: white;
     text-align: center;
-    font-size: 22px; /* Slightly larger font size */
-    font-family: 'Playfair Display', sans-serif; /* Modern and elegant font */
-    font-weight: 600; /* Semi-bold for better readability */
-    letter-spacing: 2px; /* Add spacing for a cleaner look */
-    line-height: 1.6; /* Improve readability */
+    font-size: 22px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.6;
     margin-top: 20px;
-    min-height: 350px;
+    min-height: 550px;
   }
-  
-  
-  
- 
+
+
+
+

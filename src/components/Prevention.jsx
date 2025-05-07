@@ -50,8 +50,6 @@ export default function Prediction() {
           </div>
         </div>
 
-        <h1 className="visual-title">Prevention</h1>
-
         <div className="prediction-card">
           <h2>Prevention Results</h2>
         </div>
